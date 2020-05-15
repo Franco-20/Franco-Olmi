@@ -6,3 +6,17 @@ background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
 h1,h3{
     font-family: 'Lora', serif;
 }
+.fondoC{
+    background-size: cover;
+    background-position-x: center;
+    height: 100vh;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #EAE8E6;
+}
+@media all and (min-width:600px){
+    .fondoC{
+    background-image: url(../img/fondo\ contacto.jpeg);    
+    }
+}
