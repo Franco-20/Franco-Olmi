@@ -11,10 +11,15 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
   <script src="https://kit.fontawesome.com/97731df87a.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+  <script type="text/javascript">
+     (function(){
+        emailjs.init("user_4N0ax0rZi74b3mM1qXeCk");
+     })();
+  </script>
 </head>
 
 <body>
@@ -59,7 +64,7 @@
       <p class="lead">Software developer</p>
     </div>
   </section>
-  <section class="container">    
+  <section class="container">
     <article class="shadow p-3 mb-5 bg-white rounded mt-5">
       <h3 class="text-info">Datos Personales</h3>
       <hr>
@@ -69,7 +74,11 @@
       <p><strong>Direccion:</strong> B° Portal de San Pablo Manzana G Casa 15, San Pablo Tucuman</p>
       <hr>
       <h3 class="text-info">Mi Historia</h3>
-      <p>Me egrese de la escuela secundaria en el 2017 y en el mismo año empece a trabajar en una empresa familiar dedicada a la elaboracion de cosmeticos. Mi funcion en la misma es en el dpto de elaboracion y despacho, pero como siempre me ha gustado todo lo que esta relacionado con la publicidad y comercializacion on-line, tome cursos para aprender a manejar diferentes herramientas en el mundo de la web. Actualmente estoy estudiando en Rolling Code School en la parte de <strong>Full-Stack.</strong><br>
+      <p>Me egrese de la escuela secundaria en el 2017 y en el mismo año empece a trabajar en una empresa familiar
+        dedicada a la elaboracion de cosmeticos. Mi funcion en la misma es en el dpto de elaboracion y despacho, pero
+        como siempre me ha gustado todo lo que esta relacionado con la publicidad y comercializacion on-line, tome
+        cursos para aprender a manejar diferentes herramientas en el mundo de la web. Actualmente estoy estudiando en
+        Rolling Code School en la parte de <strong>Full-Stack.</strong><br>
       </p>
     </article>
     <h1 class="display-4 text-center my-4" id="experiencia">Experincia laboral</h1>
@@ -82,143 +91,158 @@
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title mb-3">Empresa de cosmeticos</h5>              
-              <p class="card-text">Empresa de fabricacion de cosmeticos, perfumes personales, de ambiente, etc.. <br>Encargado del sector de elaboracion</p>              
+              <h5 class="card-title mb-3">Empresa de cosmeticos</h5>
+              <p class="card-text">Empresa de fabricacion de cosmeticos, perfumes personales, de ambiente, etc..
+                <br>Encargado del sector de elaboracion</p>
             </div>
           </div>
         </div>
       </div>
-  <h1 class="display-4 text-center my-4" id="educacion">Educacion</h1>
-  <article class="row justify-content-center">    
-   <div class="col-sm-12 col-md-6 col-lg-4">
-    <div class="card m-3 shadow mb-5 bg-white rounded" style="width: 19rem;">
-      <div class="bg-primary text-light d-flex flex-column justify-content-center align-items-center">
-        <p class="lead m-2">Escuela Secundaria</p>
-        <p class="lead">General Manuel Belgrano</p>
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Titulo: Bachillerato en administracion de empresas</h5>
-        <p class="card-text">Cursado los 6 años de secundaria obligatorios</p>       
-        <p><strong>Estado:</strong>
-          <span class="badge badge-success">COMPLETO</span>
-        </p>
+      <h1 class="display-4 text-center my-4" id="educacion">Educacion</h1>
+      <article class="row justify-content-center">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card m-3 shadow mb-5 bg-white rounded" style="width: 19rem;">
+            <div class="bg-primary text-light d-flex flex-column justify-content-center align-items-center">
+              <p class="lead m-2">Escuela Secundaria</p>
+              <p class="lead">General Manuel Belgrano</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Titulo: Bachillerato en administracion de empresas</h5>
+              <p class="card-text">Cursado los 6 años de secundaria obligatorios</p>
+              <p><strong>Estado:</strong>
+                <span class="badge badge-success">COMPLETO</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card m-3 shadow mb-5 bg-white rounded" style="width: 19rem;">
+            <div class="bg-primary text-light d-flex flex-column justify-content-center align-items-center p-2">
+              <p class="lead p-3">Rolling code School</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Full-Stack</h5>
+              <p class="card-text"> <strong>Habilidades</strong></p>
+              <p class="badge badge-warning">HTML5</p>
+              <p class="badge badge-warning">CSS3</p>
+              <p class="badge badge-warning">BOOSTRAP</p>
+              <p class="badge badge-warning">JAVA SCRIPT</p>
+              <p><strong>Estado:</strong>
+                <span class="badge badge-success">Cursando</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </article>
+    <h1 class="display-4 text-center my-4" id="habilidades">Habilidades</h1>
+    <div>
+      <div class="row shadow p-3 mb-5 bg-white rounded">
+        <div class="col-6">
+          <div class="p-4">
+            <h3>Front-End</h3>
+            <hr>
+            <p>HTML</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 70%" aria-valuenow="60"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p class="mt-2">CSS</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 60%" aria-valuenow="60"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p class="mt-2">Boostrap</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="60"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p class="mt-2">Java Script</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 5%" aria-valuenow="60"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <h3 class="mt-3">Base de Datos</h3>
+            <hr>
+            <p class="mt-2">MongoDB</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped" role="progressbar" style="width:5%" aria-valuenow="60"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="p-4">
+            <h3>Back-end</h3>
+            <hr>
+            <p class="mt-2">Node</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 5%" aria-valuenow="60"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p class="mt-2">Express</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 5%" aria-valuenow="60"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <h3 class="mt-3">otros</h3>
+            <hr>
+            <p class="mt-2">Scrum</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped" role="progressbar" style="width:20%" aria-valuenow="60"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p class="mt-2">Git</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 40%" aria-valuenow="60"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p class="mt-2">Trello</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 70%" aria-valuenow="60"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p class="mt-2">Slack</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="60"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <hr>
+          </div>
+        </div>
       </div>
     </div>
-   </div>   
-   <div class="col-sm-12 col-md-6 col-lg-4">
-    <div class="card m-3 shadow mb-5 bg-white rounded" style="width: 19rem;">
-      <div class="bg-primary text-light d-flex flex-column justify-content-center align-items-center p-2">        
-        <p class="lead p-3">Rolling code School</p>
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Full-Stack</h5>
-        <p class="card-text"> <strong>Habilidades</strong></p>
-        <p class="badge badge-warning">HTML5</p> 
-        <p class="badge badge-warning">CSS3</p> 
-        <p class="badge badge-warning">BOOSTRAP</p>
-        <p class="badge badge-warning">JAVA SCRIPT</p>
-        <p><strong>Estado:</strong>
-          <span class="badge badge-success">Cursando</span>
-        </p>
-      </div>
-    </div>
-   </div>
-   </article>   
-   </article>
-   <h1 class="display-4 text-center my-4" id="habilidades">Habilidades</h1>
-   <div>
-    <div class="row shadow p-3 mb-5 bg-white rounded">
-      <div class="col-6">
-        <div class="p-4">     
-        <h3>Front-End</h3>
-        <hr>
-        <p>HTML</p>
-        <div class="progress">
-         <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 70%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-       </div>
-       <p class="mt-2">CSS</p>
-        <div class="progress">
-         <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-       </div>
-       <p class="mt-2">Boostrap</p>
-        <div class="progress">
-         <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-       </div>
-       <p class="mt-2">Java Script</p>
-        <div class="progress">
-         <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 5%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-       </div>
-       <h3 class="mt-3">Base de Datos</h3>
-       <hr>
-       <p class="mt-2">MongoDB</p>
-        <div class="progress">
-         <div class="progress-bar progress-bar-striped" role="progressbar" style="width:5%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-       </div>       
-     </div>
-      </div>
-      <div class="col-6">
-        <div class="p-4">
-        <h3>Back-end</h3>
-        <hr>
-        <p class="mt-2">Node</p>
-        <div class="progress">
-         <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 5%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-       </div>
-       <p class="mt-2">Express</p>
-        <div class="progress">
-         <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 5%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-       </div>
-       <h3 class="mt-3">otros</h3>
-       <hr>
-       <p class="mt-2">Scrum</p>
-        <div class="progress">
-         <div class="progress-bar progress-bar-striped" role="progressbar" style="width:20%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-       </div>
-       <p class="mt-2">Git</p>
-        <div class="progress">
-         <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 40%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-       </div>
-       <p class="mt-2">Trello</p>
-        <div class="progress">
-         <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 70%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-       </div>
-       <p class="mt-2">Slack</p>
-        <div class="progress">
-         <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-       </div>
-       <hr>
-      </div>
-    </div>
-   </div>
-  </div>
-  <h1 class="display-4 text-center my-4" id="porfolio">Portfolio</h1>
-  <p class="text-center shadow-lg p-3 mb-5 bg-white rounded">
-    Abajo se encuentra una galeria de algunas representaciones de los proyectos que fui realizando <br> Proyectos realizados con: <strong>HTML5, CSS3, Flex-box, Boostrap</strong>
-  </p>
+    <h1 class="display-4 text-center my-4" id="porfolio">Portfolio</h1>
+    <p class="text-center shadow-lg p-3 mb-5 bg-white rounded">
+      Abajo se encuentra una galeria de algunas representaciones de los proyectos que fui realizando <br> Proyectos
+      realizados con: <strong>HTML5, CSS3, Flex-box, Boostrap</strong>
+    </p>
   </section>
   <section class="container">
     <div class="row justify-content-center shadow-none p-3 bg-light rounded">
-    <article class="columna efectos col-sm-12 col-md-4 col-lg-4">
-      <img src="img/inicio.png" alt="Foto de la pagina panaderia">
-      <img src="img/historia.png" alt="Foto de la pagina panaderia">
-      <img src="img/productos.png" alt="Foto de la pagina panaderia">
-      <img src="img/tarta (1).png" alt="Foto de la pagina panaderia">
-    </article>
-    <article class="columna efectos col-sm-12 col-md-4 col-lg-4">
-      <img src="img/blog-del-viajero.netlify.app_index.html (1).png" alt="Foto de la pagina blog del viajero">
-      <img src="img/blog-del-viajero.netlify.app_entrada2.html.png" alt="Foto de la pagina blog del viajero">
-    </article>
-    <article class="columna efectos col-sm-12 col-md-4 col-lg-4">
-      <img src="img/blog-del-viajero.netlify.app_historia.html.png" alt="Foto de la pagina blog del viajero">      
-      <img src="img/blog-del-viajero.netlify.app_galeria.html.png" alt="Foto de la pagina blog del viajero">
-      <img src="img/blog-del-viajero.netlify.app_login.html.png" alt="Foto de la pagina blog del viajero">
-    </article>
-   </div>
+      <article class="columna efectos col-sm-12 col-md-4 col-lg-4">
+        <img src="img/inicio.png" alt="Foto de la pagina panaderia">
+        <img src="img/historia.png" alt="Foto de la pagina panaderia">
+        <img src="img/productos.png" alt="Foto de la pagina panaderia">
+        <img src="img/tarta (1).png" alt="Foto de la pagina panaderia">
+      </article>
+      <article class="columna efectos col-sm-12 col-md-4 col-lg-4">
+        <img src="img/blog-del-viajero.netlify.app_index.html (1).png" alt="Foto de la pagina blog del viajero">
+        <img src="img/blog-del-viajero.netlify.app_entrada2.html.png" alt="Foto de la pagina blog del viajero">
+      </article>
+      <article class="columna efectos col-sm-12 col-md-4 col-lg-4">
+        <img src="img/blog-del-viajero.netlify.app_historia.html.png" alt="Foto de la pagina blog del viajero">
+        <img src="img/blog-del-viajero.netlify.app_galeria.html.png" alt="Foto de la pagina blog del viajero">
+        <img src="img/blog-del-viajero.netlify.app_login.html.png" alt="Foto de la pagina blog del viajero">
+      </article>
+    </div>
   </section>
   <footer class="bg-dark text-light py-1">
     <div class="container text-center">
-      <a href="https://www.linkedin.com/in/franco-olmi/" target="blanck"><i class="fab fa-linkedin fa-2x text-light"></i></a>
-      <a href="https://github.com/Franco-20"  target="blanck"><i class="fab fa-github-square fa-2x mx-2 text-light"></i></a>
+      <a href="https://www.linkedin.com/in/franco-olmi/" target="blanck"><i
+          class="fab fa-linkedin fa-2x text-light"></i></a>
+      <a href="https://github.com/Franco-20" target="blanck"><i
+          class="fab fa-github-square fa-2x mx-2 text-light"></i></a>
       <a href="https://gitlab.com/Fran20" target="blanck"><i class="fab fa-gitlab fa-2x text-light"></i></a>
       <p class="lead mt-3">Olmi Franco</p>
       <p>&copy;Todos los derechos reservados</p>
@@ -234,9 +258,10 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
 
-    <script src="js/jquery-3.5.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/popper.min.js"></script>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/contacto.js"></script>
 </body>
 
 </html>

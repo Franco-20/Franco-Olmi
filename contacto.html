@@ -8,9 +8,15 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
   <script src="https://kit.fontawesome.com/97731df87a.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
-  
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_4N0ax0rZi74b3mM1qXeCk");
+    })();
+  </script>
 </head>
 
 <body class="fondoC">
@@ -47,45 +53,74 @@
         </div>
       </div>
     </nav>
-  </header>  
-  <article class="container">      
+  </header>
+  <article class="container">
     <article class="my-5">
-        <h2>Contacto</h2>
-        <hr>
-         <div class="row">           
-            <div class="col-md-6 col-sm-12 justify-content-center">
-               <h4>Formulario de contacto</h4>                 
-                <form class="shadow p-3 mb-5 bg-white rounded">
-                    <div class="form-group">
-                        <label>Nombre y Apellido</label>
-                        <input type="text" placeholder="Franco Olmi" required class="form-control">
-                    </div>
-                     <div class="form-group">
-                         <label> Empresa</label>
-                         <input type="text" placeholder="Nombre de la empresa" required class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label>Email</label>
-                        <input type="email" placeholder="Tucorreo@gmail.com" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Comentario</label>
-                        <textarea rows="3" placeholder="Su comentario" class="form-control" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                        Enviar   
-                    </button>
-
-                </form>
+      <h2>Contacto</h2>
+      <hr>
+      <div class="row">
+        <div class="col-md-6 col-sm-12 justify-content-center">
+          <h4>Formulario de contacto</h4>
+          <form class="shadow p-3 mb-5 bg-white rounded" onsubmit="validarGeneral(event)">
+            <div class="form-group">
+              <label>Nombre y Apellido</label>
+              <input type="text" placeholder="Franco Olmi" required class="form-control" id="nombre"
+                onblur="validarNombre(this)">
+              <div class="invalid-feedback">
+                Debe ingresan un Nombre
+              </div>
+              <div class="valid-feedback">
+                Todo correcto
+              </div>
             </div>
+            <div class="form-group">
+              <label> Empresa</label>
+              <input type="text" placeholder="Nombre de la empresa" required class="form-control" id="empresa"
+                onblur="validarEmpresa(this)">
+              <div class="invalid-feedback">
+                Ingresar el nombre de la Empresa
+              </div>
+              <div class="valid-feedback">
+                Todo correcto
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="Tucorreo@gmail.com" class="form-control" required id="email"
+                onblur="validarEmail(this)">
+              <div class="invalid-feedback">
+                Debe ingresan un Email valido
+              </div>
+              <div class="valid-feedback">
+                Correo valido
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Consulta</label>
+              <textarea rows="3" placeholder="Su consulta" class="form-control" required id="consulta"
+                onblur="validarConsulta(this)"></textarea>
+              <div class="invalid-feedback">
+                Porfavor ingrese una consulta valida (Almenos 10 caracteres)
+              </div>
+              <div class="valid-feedback">
+                Gracias por su consulta
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Enviar
+            </button>
+            <div class="alert alert-primary my-3 d-none" role="alert" id="alerta"></div>
+          </form>
+          
         </div>
+      </div>
     </article>
-    
-</article>
+
+  </article>
   <footer class="bg-dark text-light py-1">
     <div class="container text-center">
       <a href="https://www.linkedin.com/in/franco-olmi/"><i class="fab fa-linkedin fa-2x text-light"></i></a>
-       <a href="https://github.com/Franco-20"><i class="fab fa-github-square fa-2x mx-2 text-light"></i></a>
+      <a href="https://github.com/Franco-20"><i class="fab fa-github-square fa-2x mx-2 text-light"></i></a>
       <a href="https://gitlab.com/Fran20"><i class="fab fa-gitlab fa-2x text-light"></i></a>
       <p class="lead mt-3">Olmi Franco</p>
       <p>&copy;Todos los derechos reservados</p>
@@ -100,6 +135,10 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/contacto.js"></script>
 </body>
 
 </html>
